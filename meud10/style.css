@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400&display=swap');
+@font-face {
+  font-family: "Android";
+  src: url("pacote-projeto-d010/fontes/idroid.otf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  list-style: none;
+  text-decoration: none;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+header {
+  height: 160px;
+  background-image: linear-gradient(180deg, #3CD782, #195734);
+}
+
+
+header h1 {
+  color: white;
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 2.2rem; 
+  text-shadow: 2px 2px 2px rgba(0,0,0,0.3);
+  text-align: center;
+  padding: 20px;
+}
+
+header p {
+  color: rgba(255, 255, 255, 0.619);
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  max-width: 400px;
+  text-shadow: 2px 2px 2px rgba(0,0,0,0.3);
+  margin: 0 auto; 
+  margin-bottom: 22px;
+}
+
+header .navbar ul {
+  display: flex;
+}
+
+header .navbar ul li a{
+  font-family: "Roboto", sans-serif;
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: white;
+  padding: 10px 20px;
+  transition: 0.3s;
+  border-radius: 3px;
+}
+
+header .navbar ul li a:hover {
+  background-color: #40a56c;
+}
+
+main {
+  background-color: #84E1AD;
+  display: flex;
+  justify-content: center;
+  box-shadow: inset 0px 2px 6px rgba(0,0,0,0.3);
+}
+
+main .content {
+  background-color: white;
+  max-width: 63%;
+  box-shadow: 0px 2px 6px rgba(0,0,0,0.3);
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  margin-bottom: 20px;
+}
+
+main .content .text {
+  padding: 20px;
+}
+
+main .content h1, h2 {
+  font-family: "Android", "Roboto", sans-serif;
+  color: #21603E; 
+  margin: 20px 0;
+}
+
+main .content h2 {
+  background-image: linear-gradient(90deg, rgba(106, 205, 149, 0.522) , white);
+  padding: 5px;
+}
+
+main .content p {
+  font-family: "Roboto", sans-serif;
+  line-height: 25px;
+  text-indent: 30px;
+  font-size: 1.8rem;
+  text-align: justify;
+}
+
+main .image {
+  padding: 20px;
+}
+
+main .image, main .video {
+  display: flex;
+  justify-content: center;
+  margin: 10px 0;
+}
+
+main .image img, .video irame {
+  max-width: 100%;
+}
+
+main .video {
+  background-color: #20804A;
+  padding: 25px;
+}
+
+main .extra {
+  margin: 25px;
+  margin-bottom: 0;
+  background-color: rgba(106, 205, 149, 0.522);
+  border-radius: 8px;
+}
+
+main .extra p {
+  margin-bottom: 15px;
+}
+
+main .extra h3 {
+  font-family: "Roboto", sans-serif;
+  color: white;
+  background-color: #2ca460;
+  padding: 10px 5px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+main .extra .extra-text {
+  padding: 20px 10px;
+}
+
+main .extra .ul {
+  display: flex;
+  margin: 25px 0;
+}
+
+main .extra .ul ul li {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
+}
+
+main .extra .ul ul:nth-child(1) {
+  margin-right: 150px;
+}
+
+footer {
+  text-align: center;
+  color: white;
+  background-color: #20804A;
+  padding: 5px;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+}
+
+@media(max-width: 1024px) {
+  main .content {
+    max-width: 80%;
+  }
+}
+
+@media(max-width: 800px) {
+  main .content {
+    max-width: 100%;
+  }
+}
+
+
+@media(max-width: 600px) {
+  :root {
+    font-size: 58%;
+  }
+
+  body header p{
+    font-size: 1.3rem;
+    max-width: 32rem;
+    margin-bottom: 3rem;
+  }
+
+  header .navbar ul {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  header .navbar ul li a {
+    font-size: 1.2rem;
+    margin: 0;
+    padding: 5px 10px;
+  }
+
+  iframe {
+    width: 360px;
+    height: 240px;
+  }
+
+  main .extra .ul ul li {
+    font-size: 1.2rem;
+  }
+
+  main .extra .ul ul:nth-child(1) {
+    margin-right: 20px;
+  }
+}
+
